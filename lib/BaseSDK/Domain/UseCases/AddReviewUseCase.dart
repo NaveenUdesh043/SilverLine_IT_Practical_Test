@@ -1,4 +1,14 @@
 
+import '../../Core/AppFailure.dart';
+import '../../Core/GenerateId.dart';
+import '../../Core/UseCase.dart';
+import '../Entities/Booking.dart';
+import '../Entities/BookingStatus.dart';
+import '../Entities/Review.dart';
+import '../Entities/ServiceProvider.dart';
+import '../Repositories/BookingRepository.dart';
+import '../Repositories/ProviderRepository.dart';
+
 class AddReview {
   const AddReview({
     required this.bookingId,

@@ -1,4 +1,8 @@
+import '../CommonObjets/ProviderFilter.dart';
+import '../CommonObjets/ProviderPage.dart';
+import '../CommonObjets/ProviderSort.dart';
 import '../Entities/ServiceCategory.dart';
+import '../Entities/ServiceProvider.dart';
 
 abstract class ProviderRepository {
   Future<List<ServiceCategory>> getCategories();

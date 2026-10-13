@@ -1,4 +1,6 @@
 
+import '../../Domain/Entities/ServiceProvider.dart';
+
 class ProviderModel {
   const ProviderModel({
     required this.id,

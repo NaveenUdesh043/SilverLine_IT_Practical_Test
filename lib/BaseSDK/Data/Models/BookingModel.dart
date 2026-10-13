@@ -1,3 +1,6 @@
+import '../../Domain/Entities/Booking.dart';
+import '../../Domain/Entities/BookingStatus.dart';
+
 class BookingModel {
   const BookingModel({
     required this.id,

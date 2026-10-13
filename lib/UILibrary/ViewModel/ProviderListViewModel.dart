@@ -1,3 +1,10 @@
+import '../../BaseSDK/Domain/CommonObjets/ProviderFilter.dart';
+import '../../BaseSDK/Domain/CommonObjets/ProviderPage.dart';
+import '../../BaseSDK/Domain/CommonObjets/ProviderSort.dart';
+import '../../BaseSDK/Domain/Entities/ServiceProvider.dart';
+import '../../BaseSDK/Domain/UseCases/GetProvidersUseCase.dart';
+import 'BaseViewModel.dart';
+
 class ProviderListViewModel extends BaseViewModel {
   ProviderListViewModel(
       this._getProviders, {

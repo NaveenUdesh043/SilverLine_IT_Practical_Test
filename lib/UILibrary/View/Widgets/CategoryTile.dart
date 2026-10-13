@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:silverline_it_practical_test/UILibrary/View/Theme/CommonVisuals.dart';
+
+import '../../../BaseSDK/Domain/Entities/ServiceCategory.dart';
 
 class CategoryTile extends StatelessWidget {
   const CategoryTile({super.key, required this.category, this.onTap});
@@ -9,7 +12,7 @@ class CategoryTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final ThemeData theme = Theme.of(context);
-    final Color color = CategoryVisuals.colorFor(category.id);
+    final Color color = CommonVisuals.colorFor(category.id);
 
     return Material(
       color: theme.colorScheme.surfaceContainerLow,
@@ -31,7 +34,7 @@ class CategoryTile extends StatelessWidget {
                   borderRadius: BorderRadius.circular(14),
                 ),
                 child: Icon(
-                  CategoryVisuals.iconFor(category.id),
+                  CommonVisuals.iconFor(category.id),
                   color: color,
                   size: 24,
                 ),

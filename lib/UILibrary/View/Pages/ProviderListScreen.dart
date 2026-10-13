@@ -1,5 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:silverline_it_practical_test/UILibrary/View/Theme/CommonVisuals.dart';
+import 'package:silverline_it_practical_test/UILibrary/View/Widgets/BottomBar.dart';
+
+import '../../../BaseSDK/Domain/CommonObjets/ProviderFilter.dart';
+import '../../../BaseSDK/Domain/CommonObjets/ProviderSort.dart';
+import '../../../BaseSDK/Domain/Entities/ServiceCategory.dart';
+import '../../../BaseSDK/Domain/Entities/ServiceProvider.dart';
+import '../../../BaseSDK/Domain/UseCases/GetProvidersUseCase.dart';
+import '../../ViewModel/CategoriesViewModel.dart';
+import '../../ViewModel/ProviderListViewModel.dart';
+import '../Widgets/EmptyView.dart';
+import '../Widgets/ErrorView.dart';
+import '../Widgets/FilterBottomSheet.dart';
+import '../Widgets/LoadingView.dart';
+import '../Widgets/ProviderCard.dart';
+import 'ProviderDetailScreen.dart';
 
 class ProviderListScreen extends StatelessWidget {
   const ProviderListScreen({
@@ -81,7 +97,7 @@ class _ProviderListViewState extends State<_ProviderListView> {
 
   String _title(ProviderListViewModel vm) {
     final String? categoryId = vm.filter.categoryId;
-    if (categoryId != null) return CategoryVisuals.nameFor(categoryId);
+    if (categoryId != null) return CommonVisuals.nameFor(categoryId);
     return 'Providers';
   }
 
@@ -126,7 +142,7 @@ class _ProviderListViewState extends State<_ProviderListView> {
               ),
             ),
           if (!vm.isEmpty)
-            PaginationFooter(
+            BottomBar(
               isLoadingMore: vm.isLoadingMore,
               hasMore: vm.hasMore,
               errorMessage: vm.loadMoreError,

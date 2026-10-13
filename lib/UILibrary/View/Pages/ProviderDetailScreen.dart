@@ -1,5 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:silverline_it_practical_test/UILibrary/View/Theme/CommonVisuals.dart';
+import 'package:silverline_it_practical_test/UILibrary/View/Widgets/StarRatings.dart';
+
+import '../../../BaseSDK/Core/Formatters.dart';
+import '../../../BaseSDK/Domain/Entities/Review.dart';
+import '../../../BaseSDK/Domain/Entities/ServiceProvider.dart';
+import '../../../BaseSDK/Domain/UseCases/GetProviderByIdUseCase.dart';
+import '../../../BaseSDK/Domain/UseCases/GetProviderReviewsUseCase.dart';
+import '../../ViewModel/ProviderDetailViewModel.dart';
+import '../Widgets/AvailabilityBadge.dart';
+import '../Widgets/EmptyView.dart';
+import '../Widgets/ErrorView.dart';
+import '../Widgets/LoadingView.dart';
+import '../Widgets/ReviewTile.dart';
+import '../Widgets/SectionTitle.dart';
+import 'BookingScreen.dart';
 
 
 class ProviderDetailScreen extends StatelessWidget {
@@ -114,7 +130,7 @@ class _Header extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final ThemeData theme = Theme.of(context);
-    final Color color = CategoryVisuals.colorFor(provider.categoryId);
+    final Color color = CommonVisuals.colorFor(provider.categoryId);
     final String initials = provider.name
         .trim()
         .split(RegExp(r'\s+'))
@@ -151,14 +167,14 @@ class _Header extends StatelessWidget {
         ),
         const SizedBox(height: 4),
         Text(
-          CategoryVisuals.nameFor(provider.categoryId),
+          CommonVisuals.nameFor(provider.categoryId),
           style: theme.textTheme.bodyMedium?.copyWith(color: color),
         ),
         const SizedBox(height: 10),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            RatingStars(
+            StarRatings(
               rating: provider.rating,
               count: provider.reviewCount,
               size: 18,
@@ -267,7 +283,7 @@ class _BookingBar extends StatelessWidget {
                   builder: (_) => BookingScreen(
                     provider: provider,
                     serviceName:
-                    CategoryVisuals.nameFor(provider.categoryId),
+                    CommonVisuals.nameFor(provider.categoryId),
                   ),
                 ),
               )

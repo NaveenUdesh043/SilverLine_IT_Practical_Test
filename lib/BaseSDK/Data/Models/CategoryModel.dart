@@ -1,4 +1,4 @@
-import '../../Domain/Entities/service_category.dart';
+import '../../Domain/Entities/ServiceCategory.dart';
 
 class CategoryModel {
   const CategoryModel({required this.id, required this.name});

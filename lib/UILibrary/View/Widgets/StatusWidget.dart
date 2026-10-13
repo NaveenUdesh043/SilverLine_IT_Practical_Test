@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../BaseSDK/Domain/Entities/BookingStatus.dart';
+
 
 class StatusWidget extends StatelessWidget {
   const StatusWidget({super.key, required this.status});

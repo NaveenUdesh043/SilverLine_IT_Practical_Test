@@ -1,6 +1,15 @@
+import '../../Core/AppConstants.dart';
 import '../../Core/AppFailure.dart';
+import '../../Domain/CommonObjets/ProviderFilter.dart';
+import '../../Domain/CommonObjets/ProviderPage.dart';
+import '../../Domain/CommonObjets/ProviderSort.dart';
+import '../../Domain/Entities/ServiceCategory.dart';
+import '../../Domain/Entities/ServiceProvider.dart';
+import '../../Domain/Repositories/ProviderRepository.dart';
 import '../DataSources/ProviderLocalDataSource.dart';
 import '../DataSources/RatingLocalDataSource.dart';
+import '../Models/CategoryModel.dart';
+import '../Models/ProviderModel.dart';
 
 class ProviderRepositoryImpl implements ProviderRepository {
   ProviderRepositoryImpl(this._dataSource, this._ratingStore);

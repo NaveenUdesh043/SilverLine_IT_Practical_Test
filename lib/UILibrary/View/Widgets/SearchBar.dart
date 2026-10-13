@@ -1,5 +1,7 @@
-class SearchBar extends StatelessWidget {
-  const SearchBar({
+import 'package:flutter/material.dart';
+
+class AppSearchField extends StatelessWidget {
+  const AppSearchField({
     super.key,
     required this.controller,
     required this.onChanged,
@@ -18,17 +20,21 @@ class SearchBar extends StatelessWidget {
       controller: controller,
       onChanged: onChanged,
       textInputAction: TextInputAction.search,
+
       decoration: InputDecoration(
         hintText: hintText,
-        prefixIcon: const Icon(Icons.search_rounded),
+        prefixIcon: const Icon(
+            Icons.search_rounded),
+
         suffixIcon: ValueListenableBuilder<TextEditingValue>(
           valueListenable: controller,
           builder: (context, value, _) {
             if (value.text.isEmpty) return const SizedBox.shrink();
-            return IconButton(
-              icon: const Icon(Icons.close_rounded),
-              onPressed: onClear,
-            );
+            return
+              IconButton(
+                icon: const Icon(Icons.close_rounded),
+                onPressed: onClear,
+              );
           },
         ),
       ),

@@ -1,6 +1,10 @@
 import 'dart:convert';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../../Domain/Entities/BookingStatus.dart';
+import '../Models/BookingModel.dart';
+import '../Models/ReviewModel.dart';
+
 abstract class BookingLocalDataSource {
   Future<List<BookingModel>> getBookings();
 
@@ -74,8 +78,6 @@ class BookingLocalDataSourceImpl implements BookingLocalDataSource {
         .toList(growable: false);
   }
 
-  // ---- Seed data (first launch only) -------------------------------------
-
   List<BookingModel> _buildSeedBookings(DateTime now) {
     BookingModel build({
       required String id,
@@ -112,7 +114,7 @@ class BookingLocalDataSourceImpl implements BookingLocalDataSource {
       build(
         id: 'bk_seed_pending',
         providerId: 'p001',
-        providerName: 'Naveen Silva"
+        providerName: 'Naveen Silva',
         categoryId: 'plumbing',
         serviceName: 'Plumbing',
         date: now.add(const Duration(days: 3)),

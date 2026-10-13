@@ -13,7 +13,10 @@ abstract class RatingLocalDataSource {
 }
 
 class RatingOverride {
-  const RatingOverride({required this.rating, required this.reviewCount});
+  const RatingOverride({
+    required this.rating,
+    required this.reviewCount
+  });
 
   final double rating;
   final int reviewCount;
@@ -28,10 +31,13 @@ class RatingLocalDataSourceImpl implements RatingLocalDataSource {
 
   @override
   Future<Map<String, RatingOverride>> readAll() async {
+
     final String? raw = _prefs.getString(_key);
+
     if (raw == null || raw.isEmpty) return <String, RatingOverride>{};
     final Map<String, dynamic> decoded =
     jsonDecode(raw) as Map<String, dynamic>;
+
     return decoded.map((key, value) {
       final Map<String, dynamic> entry = value as Map<String, dynamic>;
       return MapEntry(
@@ -52,11 +58,17 @@ class RatingLocalDataSourceImpl implements RatingLocalDataSource {
   }) async {
     final Map<String, RatingOverride> overrides = await readAll();
     overrides[providerId] =
-        RatingOverride(rating: rating, reviewCount: reviewCount);
+        RatingOverride(
+            rating: rating,
+            reviewCount: reviewCount
+        );
     final Map<String, dynamic> encoded = overrides.map(
           (key, value) => MapEntry(
         key,
-        <String, dynamic>{'rating': value.rating, 'reviewCount': value.reviewCount},
+        <String, dynamic>{
+          'rating': value.rating,
+          'reviewCount': value.reviewCount
+        },
       ),
     );
     await _prefs.setString(_key, jsonEncode(encoded));

@@ -1,6 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../../BaseSDK/Domain/Entities/Booking.dart';
+import '../../../BaseSDK/Domain/Entities/BookingStatus.dart';
+import '../../../BaseSDK/Domain/UseCases/GetBookingsUseCase.dart';
+import '../../../BaseSDK/Domain/UseCases/UpdateBookingStatusUseCase.dart';
+import '../../ViewModel/ProviderJobsViewModel.dart';
+import '../Widgets/BookingCard.dart';
+import '../Widgets/EmptyView.dart';
+import '../Widgets/ErrorView.dart';
+import '../Widgets/LoadingView.dart';
+
 
 class ProviderJobsScreen extends StatelessWidget {
   const ProviderJobsScreen({super.key});

@@ -1,0 +1,682 @@
+{
+  "categories": [
+    {
+      "id": "plumbing",
+      "name": "Plumbing"
+    },
+    {
+      "id": "electrical",
+      "name": "Electrical"
+    },
+    {
+      "id": "carpentry",
+      "name": "Carpentry"
+    },
+    {
+      "id": "painting",
+      "name": "Painting"
+    },
+    {
+      "id": "ac_repair",
+      "name": "AC Repair"
+    },
+    {
+      "id": "cleaning",
+      "name": "Cleaning"
+    },
+    {
+      "id": "laundering",
+      "name": "Laundering"
+    }
+  ],
+  "providers": [
+    {
+      "id": "p001",
+      "name": "naveen Udesh",
+      "categoryId": "plumbing",
+      "rating": 4.4,
+      "reviewCount": 105,
+      "completedJobs": 119,
+      "experienceYears": 16,
+      "hourlyRate": 3000,
+      "location": "Ragama",
+      "isAvailable": true,
+      "description": "Plumber for leaks, pipes, water heaters and bathroom fittings.",
+      "skills": [
+        "Pipe fitting",
+        "Tap installation",
+        "Water heaters"
+      ]
+    },
+    {
+      "id": "p002",
+      "name": "Maduhan Senevirathna",
+      "categoryId": "plumbing",
+      "rating": 4.4,
+      "reviewCount": 132,
+      "completedJobs": 185,
+      "experienceYears": 4,
+      "hourlyRate": 2100,
+      "location": "Maharagama",
+      "isAvailable": true,
+      "description": "Plumber for leaks, pipes, water heaters and bathroom fittings.",
+      "skills": [
+        "Drain cleaning",
+        "Water heaters",
+        "Tap installation"
+      ]
+    },
+    {
+      "id": "p003",
+      "name": "Lahiru Perera",
+      "categoryId": "plumbing",
+      "rating": 4.1,
+      "reviewCount": 113,
+      "completedJobs": 294,
+      "experienceYears": 9,
+      "hourlyRate": 2600,
+      "location": "Gampaha",
+      "isAvailable": true,
+      "description": "Plumber for leaks, pipes, water heaters and bathroom fittings.",
+      "skills": [
+        "Drain cleaning",
+        "Leak repair",
+        "Water heaters"
+      ]
+    },
+    {
+      "id": "p004",
+      "name": "Tharindu Fernando",
+      "categoryId": "plumbing",
+      "rating": 4.3,
+      "reviewCount": 27,
+      "completedJobs": 182,
+      "experienceYears": 6,
+      "hourlyRate": 3800,
+      "location": "Wattala",
+      "isAvailable": true,
+      "description": "Plumber for leaks, pipes, water heaters and bathroom fittings.",
+      "skills": [
+        "Drain cleaning",
+        "Pipe fitting",
+        "Bathroom fittings"
+      ]
+    },
+    {
+      "id": "p005",
+      "name": "Kisal Silva",
+      "categoryId": "plumbing",
+      "rating": 4.9,
+      "reviewCount": 54,
+      "completedJobs": 305,
+      "experienceYears": 7,
+      "hourlyRate": 2600,
+      "location": "Piliyandala",
+      "isAvailable": true,
+      "description": "Plumber for leaks, pipes, water heaters and bathroom fittings.",
+      "skills": [
+        "Pipe fitting",
+        "Leak repair",
+        "Tap installation"
+      ]
+    },
+    {
+      "id": "p006",
+      "name": "Asela Weerasinghe",
+      "categoryId": "plumbing",
+      "rating": 4.2,
+      "reviewCount": 39,
+      "completedJobs": 296,
+      "experienceYears": 7,
+      "hourlyRate": 2200,
+      "location": "Colombo",
+      "isAvailable": true,
+      "description": "Plumber for leaks, pipes, water heaters and bathroom fittings.",
+      "skills": [
+        "Water heaters",
+        "Drain cleaning",
+        "Tap installation"
+      ]
+    },
+    {
+      "id": "p007",
+      "name": "Chanaka Bandara",
+      "categoryId": "electrical",
+      "rating": 3.7,
+      "reviewCount": 128,
+      "completedJobs": 249,
+      "experienceYears": 14,
+      "hourlyRate": 2400,
+      "location": "Moratuwa",
+      "isAvailable": false,
+      "description": "Electrician for wiring, faults, lighting and installations.",
+      "skills": [
+        "Lighting",
+        "Fault finding",
+        "Fan installation"
+      ]
+    },
+    {
+      "id": "p008",
+      "name": "Dilip Fonseka",
+      "categoryId": "electrical",
+      "rating": 4.2,
+      "reviewCount": 61,
+      "completedJobs": 235,
+      "experienceYears": 11,
+      "hourlyRate": 2800,
+      "location": "Dehiwala",
+      "isAvailable": true,
+      "description": "Electrician for wiring, faults, lighting and installations.",
+      "skills": [
+        "Earthing",
+        "Switch boards",
+        "House wiring"
+      ]
+    },
+    {
+      "id": "p009",
+      "name": "Ranga Pathirana",
+      "categoryId": "electrical",
+      "rating": 4.4,
+      "reviewCount": 41,
+      "completedJobs": 222,
+      "experienceYears": 1,
+      "hourlyRate": 3100,
+      "location": "Mount Lavinia",
+      "isAvailable": true,
+      "description": "Electrician for wiring, faults, lighting and installations.",
+      "skills": [
+        "Switch boards",
+        "Fault finding",
+        "Earthing"
+      ]
+    },
+    {
+      "id": "p010",
+      "name": "Mahesh Rajapaksa",
+      "categoryId": "electrical",
+      "rating": 4.0,
+      "reviewCount": 17,
+      "completedJobs": 293,
+      "experienceYears": 1,
+      "hourlyRate": 2000,
+      "location": "Negombo",
+      "isAvailable": true,
+      "description": "Electrician for wiring, faults, lighting and installations.",
+      "skills": [
+        "Earthing",
+        "Switch boards",
+        "Fan installation"
+      ]
+    },
+    {
+      "id": "p011",
+      "name": "Jagath Wickramasinghe",
+      "categoryId": "electrical",
+      "rating": 4.9,
+      "reviewCount": 27,
+      "completedJobs": 98,
+      "experienceYears": 9,
+      "hourlyRate": 3800,
+      "location": "Kalutara",
+      "isAvailable": true,
+      "description": "Electrician for wiring, faults, lighting and installations.",
+      "skills": [
+        "Fault finding",
+        "Earthing",
+        "Fan installation"
+      ]
+    },
+    {
+      "id": "p012",
+      "name": "Sampath Silva",
+      "categoryId": "electrical",
+      "rating": 4.2,
+      "reviewCount": 9,
+      "completedJobs": 284,
+      "experienceYears": 15,
+      "hourlyRate": 4100,
+      "location": "Kelaniya",
+      "isAvailable": false,
+      "description": "Electrician for wiring, faults, lighting and installations.",
+      "skills": [
+        "Fan installation",
+        "House wiring",
+        "Switch boards"
+      ]
+    },
+    {
+      "id": "p013",
+      "name": "Jagath Cooray",
+      "categoryId": "carpentry",
+      "rating": 4.2,
+      "reviewCount": 36,
+      "completedJobs": 163,
+      "experienceYears": 6,
+      "hourlyRate": 2700,
+      "location": "Galle",
+      "isAvailable": true,
+      "description": "Carpenter for furniture, doors, cabinets and custom woodwork.",
+      "skills": [
+        "Wood polishing",
+        "Furniture repair",
+        "Door fitting"
+      ]
+    },
+    {
+      "id": "p014",
+      "name": "Prasad Bandara",
+      "categoryId": "carpentry",
+      "rating": 4.7,
+      "reviewCount": 58,
+      "completedJobs": 248,
+      "experienceYears": 14,
+      "hourlyRate": 3800,
+      "location": "Wattala",
+      "isAvailable": false,
+      "description": "Carpenter for furniture, doors, cabinets and custom woodwork.",
+      "skills": [
+        "Wardrobes",
+        "Wood polishing",
+        "Furniture repair"
+      ]
+    },
+    {
+      "id": "p015",
+      "name": "Dilip Mendis",
+      "categoryId": "carpentry",
+      "rating": 4.5,
+      "reviewCount": 77,
+      "completedJobs": 259,
+      "experienceYears": 12,
+      "hourlyRate": 3400,
+      "location": "Ja-Ela",
+      "isAvailable": true,
+      "description": "Carpenter for furniture, doors, cabinets and custom woodwork.",
+      "skills": [
+        "Shelving",
+        "Wood polishing",
+        "Wardrobes"
+      ]
+    },
+    {
+      "id": "p016",
+      "name": "Jagath Fernando",
+      "categoryId": "carpentry",
+      "rating": 4.0,
+      "reviewCount": 32,
+      "completedJobs": 42,
+      "experienceYears": 7,
+      "hourlyRate": 4300,
+      "location": "Piliyandala",
+      "isAvailable": false,
+      "description": "Carpenter for furniture, doors, cabinets and custom woodwork.",
+      "skills": [
+        "Shelving",
+        "Kitchen cabinets",
+        "Wardrobes"
+      ]
+    },
+    {
+      "id": "p017",
+      "name": "Sachith Cooray",
+      "categoryId": "carpentry",
+      "rating": 4.0,
+      "reviewCount": 138,
+      "completedJobs": 81,
+      "experienceYears": 19,
+      "hourlyRate": 3000,
+      "location": "Homagama",
+      "isAvailable": true,
+      "description": "Carpenter for furniture, doors, cabinets and custom woodwork.",
+      "skills": [
+        "Wood polishing",
+        "Kitchen cabinets",
+        "Wardrobes"
+      ]
+    },
+    {
+      "id": "p018",
+      "name": "Nimal Silva",
+      "categoryId": "carpentry",
+      "rating": 4.1,
+      "reviewCount": 87,
+      "completedJobs": 185,
+      "experienceYears": 13,
+      "hourlyRate": 4200,
+      "location": "Ja-Ela",
+      "isAvailable": true,
+      "description": "Carpenter for furniture, doors, cabinets and custom woodwork.",
+      "skills": [
+        "Kitchen cabinets",
+        "Shelving",
+        "Wood polishing"
+      ]
+    },
+    {
+      "id": "p019",
+      "name": "Sunil Mendis",
+      "categoryId": "painting",
+      "rating": 4.4,
+      "reviewCount": 71,
+      "completedJobs": 136,
+      "experienceYears": 18,
+      "hourlyRate": 4100,
+      "location": "Kadawatha",
+      "isAvailable": true,
+      "description": "Painter for interior and exterior walls, ceilings and wood.",
+      "skills": [
+        "Wood varnish",
+        "Interior painting",
+        "Wall plastering"
+      ]
+    },
+    {
+      "id": "p020",
+      "name": "Avishka Wickramasinghe",
+      "categoryId": "painting",
+      "rating": 4.5,
+      "reviewCount": 59,
+      "completedJobs": 210,
+      "experienceYears": 3,
+      "hourlyRate": 5000,
+      "location": "Moratuwa",
+      "isAvailable": false,
+      "description": "Painter for interior and exterior walls, ceilings and wood.",
+      "skills": [
+        "Texture coating",
+        "Exterior painting",
+        "Wood varnish"
+      ]
+    },
+    {
+      "id": "p021",
+      "name": "Dinesh Mendis",
+      "categoryId": "painting",
+      "rating": 3.8,
+      "reviewCount": 94,
+      "completedJobs": 35,
+      "experienceYears": 4,
+      "hourlyRate": 4800,
+      "location": "Ragama",
+      "isAvailable": true,
+      "description": "Painter for interior and exterior walls, ceilings and wood.",
+      "skills": [
+        "Wall plastering",
+        "Exterior painting",
+        "Interior painting"
+      ]
+    },
+    {
+      "id": "p022",
+      "name": "Sujith Kumara",
+      "categoryId": "painting",
+      "rating": 3.6,
+      "reviewCount": 131,
+      "completedJobs": 71,
+      "experienceYears": 6,
+      "hourlyRate": 2400,
+      "location": "Wattala",
+      "isAvailable": true,
+      "description": "Painter for interior and exterior walls, ceilings and wood.",
+      "skills": [
+        "Texture coating",
+        "Wood varnish",
+        "Ceiling painting"
+      ]
+    },
+    {
+      "id": "p023",
+      "name": "Ranga Kumara",
+      "categoryId": "painting",
+      "rating": 4.8,
+      "reviewCount": 77,
+      "completedJobs": 52,
+      "experienceYears": 7,
+      "hourlyRate": 3800,
+      "location": "Negombo",
+      "isAvailable": true,
+      "description": "Painter for interior and exterior walls, ceilings and wood.",
+      "skills": [
+        "Wall plastering",
+        "Texture coating",
+        "Interior painting"
+      ]
+    },
+    {
+      "id": "p024",
+      "name": "Sujith de Silva",
+      "categoryId": "painting",
+      "rating": 4.1,
+      "reviewCount": 126,
+      "completedJobs": 16,
+      "experienceYears": 14,
+      "hourlyRate": 3400,
+      "location": "Homagama",
+      "isAvailable": true,
+      "description": "Painter for interior and exterior walls, ceilings and wood.",
+      "skills": [
+        "Wall plastering",
+        "Ceiling painting",
+        "Texture coating"
+      ]
+    },
+    {
+      "id": "p025",
+      "name": "Prasad Herath",
+      "categoryId": "ac_repair",
+      "rating": 3.8,
+      "reviewCount": 138,
+      "completedJobs": 254,
+      "experienceYears": 7,
+      "hourlyRate": 3600,
+      "location": "Ja-Ela",
+      "isAvailable": true,
+      "description": "AC technician for servicing, gas refills and repairs.",
+      "skills": [
+        "AC installation",
+        "Fault diagnosis",
+        "Gas refilling"
+      ]
+    },
+    {
+      "id": "p026",
+      "name": "Tharindu Gunasekara",
+      "categoryId": "ac_repair",
+      "rating": 3.8,
+      "reviewCount": 123,
+      "completedJobs": 123,
+      "experienceYears": 18,
+      "hourlyRate": 4300,
+      "location": "Colombo",
+      "isAvailable": true,
+      "description": "AC technician for servicing, gas refills and repairs.",
+      "skills": [
+        "Water leak fixing",
+        "Gas refilling",
+        "Compressor repair"
+      ]
+    },
+    {
+      "id": "p027",
+      "name": "Buddika Kumara",
+      "categoryId": "ac_repair",
+      "rating": 4.4,
+      "reviewCount": 10,
+      "completedJobs": 93,
+      "experienceYears": 16,
+      "hourlyRate": 4700,
+      "location": "Piliyandala",
+      "isAvailable": true,
+      "description": "AC technician for servicing, gas refills and repairs.",
+      "skills": [
+        "Water leak fixing",
+        "AC servicing",
+        "AC installation"
+      ]
+    },
+    {
+      "id": "p028",
+      "name": "Ajith Rajapaksa",
+      "categoryId": "ac_repair",
+      "rating": 4.0,
+      "reviewCount": 108,
+      "completedJobs": 47,
+      "experienceYears": 16,
+      "hourlyRate": 4800,
+      "location": "Colombo",
+      "isAvailable": false,
+      "description": "AC technician for servicing, gas refills and repairs.",
+      "skills": [
+        "AC installation",
+        "AC servicing",
+        "Fault diagnosis"
+      ]
+    },
+    {
+      "id": "p029",
+      "name": "Malinda Bandara",
+      "categoryId": "ac_repair",
+      "rating": 4.2,
+      "reviewCount": 130,
+      "completedJobs": 239,
+      "experienceYears": 10,
+      "hourlyRate": 3900,
+      "location": "Ja-Ela",
+      "isAvailable": false,
+      "description": "AC technician for servicing, gas refills and repairs.",
+      "skills": [
+        "AC servicing",
+        "AC installation",
+        "Compressor repair"
+      ]
+    },
+    {
+      "id": "p030",
+      "name": "Pathum Wickramasinghe",
+      "categoryId": "ac_repair",
+      "rating": 4.6,
+      "reviewCount": 98,
+      "completedJobs": 255,
+      "experienceYears": 10,
+      "hourlyRate": 3800,
+      "location": "Panadura",
+      "isAvailable": false,
+      "description": "AC technician for servicing, gas refills and repairs.",
+      "skills": [
+        "Compressor repair",
+        "Water leak fixing",
+        "AC servicing"
+      ]
+    },
+    {
+      "id": "p031",
+      "name": "Dilip Peiris",
+      "categoryId": "cleaning",
+      "rating": 4.9,
+      "reviewCount": 63,
+      "completedJobs": 169,
+      "experienceYears": 5,
+      "hourlyRate": 2400,
+      "location": "Nugegoda",
+      "isAvailable": true,
+      "description": "Cleaning crew for homes, sofas, carpets and post-renovation.",
+      "skills": [
+        "Carpet cleaning",
+        "Deep cleaning",
+        "Post-renovation cleaning"
+      ]
+    },
+    {
+      "id": "p032",
+      "name": "Dilip Silva",
+      "categoryId": "cleaning",
+      "rating": 4.3,
+      "reviewCount": 77,
+      "completedJobs": 241,
+      "experienceYears": 9,
+      "hourlyRate": 3500,
+      "location": "Kelaniya",
+      "isAvailable": false,
+      "description": "Cleaning crew for homes, sofas, carpets and post-renovation.",
+      "skills": [
+        "Kitchen cleaning",
+        "Post-renovation cleaning",
+        "Carpet cleaning"
+      ]
+    },
+    {
+      "id": "p033",
+      "name": "Tharindu de Silva",
+      "categoryId": "cleaning",
+      "rating": 3.9,
+      "reviewCount": 14,
+      "completedJobs": 236,
+      "experienceYears": 5,
+      "hourlyRate": 4500,
+      "location": "Kadawatha",
+      "isAvailable": false,
+      "description": "Cleaning crew for homes, sofas, carpets and post-renovation.",
+      "skills": [
+        "Sofa cleaning",
+        "Post-renovation cleaning",
+        "Carpet cleaning"
+      ]
+    },
+    {
+      "id": "p034",
+      "name": "Pathum Herath",
+      "categoryId": "cleaning",
+      "rating": 3.5,
+      "reviewCount": 72,
+      "completedJobs": 249,
+      "experienceYears": 3,
+      "hourlyRate": 4400,
+      "location": "Kalutara",
+      "isAvailable": true,
+      "description": "Cleaning crew for homes, sofas, carpets and post-renovation.",
+      "skills": [
+        "Kitchen cleaning",
+        "Carpet cleaning",
+        "Sofa cleaning"
+      ]
+    },
+    {
+      "id": "p035",
+      "name": "Ajith Fonseka",
+      "categoryId": "cleaning",
+      "rating": 4.6,
+      "reviewCount": 95,
+      "completedJobs": 308,
+      "experienceYears": 13,
+      "hourlyRate": 3100,
+      "location": "Homagama",
+      "isAvailable": true,
+      "description": "Cleaning crew for homes, sofas, carpets and post-renovation.",
+      "skills": [
+        "Kitchen cleaning",
+        "Carpet cleaning",
+        "Deep cleaning"
+      ]
+    },
+    {
+      "id": "p036",
+      "name": "Thilina Ekanayake",
+      "categoryId": "cleaning",
+      "rating": 3.9,
+      "reviewCount": 16,
+      "completedJobs": 99,
+      "experienceYears": 5,
+      "hourlyRate": 4400,
+      "location": "Battaramulla",
+      "isAvailable": true,
+      "description": "Cleaning crew for homes, sofas, carpets and post-renovation.",
+      "skills": [
+        "Post-renovation cleaning",
+        "Kitchen cleaning",
+        "Sofa cleaning"
+      ]
+    }
+  ]
+}

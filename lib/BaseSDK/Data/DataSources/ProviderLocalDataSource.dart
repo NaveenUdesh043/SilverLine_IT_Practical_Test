@@ -4,6 +4,8 @@ import 'package:flutter/services.dart';
 
 import '../../Core/AppConstants.dart';
 import '../../Core/AppFailure.dart';
+import '../Models/CategoryModel.dart';
+import '../Models/ProviderModel.dart';
 
 abstract class ProviderLocalDataSource {
   Future<List<CategoryModel>> fetchCategories();
@@ -41,7 +43,6 @@ class ProviderLocalDataSourceImpl implements ProviderLocalDataSource {
     }
   }
 
-  /// Simulates an unreliable network: random 800-1500ms delay and ~20% failure.
   Future<void> _simulateNetwork() async {
     final int span = maxDelay.inMilliseconds - minDelay.inMilliseconds;
     final int delay =

@@ -9,8 +9,8 @@ class Formatters {
     decimalDigits: 0,
   );
 
-  static final DateFormat _date = DateFormat('EEE, d MMM yyyy');
-  static final DateFormat _dateTime = DateFormat('d MMM yyyy, h:mm a');
+  static final DateFormat _date = DateFormat('dd MMM yyyy');
+  static final DateFormat _dateTime = DateFormat('dd MMM yyyy, h:mm a');
 
   static String currency(num value) => _currency.format(value);
 

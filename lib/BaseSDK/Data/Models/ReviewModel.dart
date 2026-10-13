@@ -1,4 +1,6 @@
 
+import '../../Domain/Entities/Review.dart';
+
 class ReviewModel {
   const ReviewModel({
     required this.id,

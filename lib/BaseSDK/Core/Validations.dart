@@ -37,7 +37,6 @@ class Validations {
     return null;
   }
 
-  /// Booking date must be at least 24 hours away.
   static String? bookingDate(DateTime? date, DateTime now) {
     if (date == null) return 'Please select a date';
     final DateTime earliest = now.add(AppConstants.cancellationCutoff);

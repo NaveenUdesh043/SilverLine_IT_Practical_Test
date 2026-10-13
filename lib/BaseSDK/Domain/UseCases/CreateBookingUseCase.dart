@@ -1,5 +1,6 @@
 
 import '../../Core/GenerateId.dart';
+import '../../Core/UseCase.dart';
 import '../Entities/Booking.dart';
 import '../Entities/BookingStatus.dart';
 import '../Repositories/BookingRepository.dart';
@@ -61,7 +62,7 @@ class CreateBookingUseCase implements UseCase<Booking, CreateBooking> {
       notes: params.notes,
       hours: params.hours,
       hourlyRate: params.hourlyRate,
-      status:  git add BookingStatus.pending,
+      status: BookingStatus.pending,
       createdAt: _now(),
     );
     await _repository.saveBooking(booking);

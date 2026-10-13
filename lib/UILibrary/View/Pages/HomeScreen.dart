@@ -1,5 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:silverline_it_practical_test/UILibrary/View/Widgets/BottomBar.dart';
+
+import '../../../BaseSDK/Domain/CommonObjets/ProviderFilter.dart';
+import '../../../BaseSDK/Domain/Entities/ServiceCategory.dart';
+import '../../../BaseSDK/Domain/Entities/ServiceProvider.dart';
+import '../../../BaseSDK/Domain/UseCases/GetProvidersUseCase.dart';
+import '../../ViewModel/CategoriesViewModel.dart';
+import '../../ViewModel/HomeViewModel.dart';
+import '../../ViewModel/ProviderListViewModel.dart';
+import '../Widgets/CategoryTile.dart';
+import '../Widgets/EmptyView.dart';
+import '../Widgets/ErrorView.dart';
+import '../Widgets/LoadingView.dart';
+import '../Widgets/ProviderCard.dart';
+import '../Widgets/SearchBar.dart';
+import '../Widgets/SectionTitle.dart';
+import 'ProviderDetailScreen.dart';
+import 'ProviderListScreen.dart';
 
 
 class HomeScreen extends StatelessWidget {
@@ -195,7 +213,7 @@ class _SearchResults extends StatelessWidget {
             ),
           ),
         ),
-        PaginationFooter(
+        BottomBar(
           isLoadingMore: vm.isLoadingMore,
           hasMore: vm.hasMore,
           errorMessage: vm.loadMoreError,

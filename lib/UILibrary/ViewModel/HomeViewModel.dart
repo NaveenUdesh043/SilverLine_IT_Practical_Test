@@ -1,5 +1,11 @@
 
+import '../../BaseSDK/Core/Debouncer.dart';
+import '../../BaseSDK/Domain/UseCases/GetProvidersUseCase.dart';
+import 'BaseViewModel.dart';
+import 'ProviderListViewModel.dart';
+
 class HomeViewModel extends BaseViewModel {
+
   HomeViewModel(GetProvidersUseCase getProviders)
       : search = ProviderListViewModel(getProviders) {
     search.addListener(_forward);
