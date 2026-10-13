@@ -1,35 +1,28 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter/material.dart';
-import 'package:silverline_it_practical_test/BaseSDK/Core/AppConstants.dart';
+import 'UILibrary/View/Pages/RootShell.dart';
+import 'UILibrary/View/Theme/AppTheme.dart';
 
-import 'UILibrary/View/Pages/HomeScreen.dart';
-import 'UILibrary/ViewModel/HomeViewModel.dart';
-
-void main() {
-  final localDataSource = CounterLocalDataSource();
-  final repository = CounterRepositoryImpl(localDataSource);
-
-  final homeViewModel = HomeViewModel(
-    getCounter: GetCounterUseCase(repository),
-    incrementCounter: IncrementCounterUseCase(repository),
-  );
-
-  runApp(SilverlineApp(homeViewModel: homeViewModel));
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  runApp(const FixItApp());
 }
 
-class SilverlineApp extends StatelessWidget {
-  const SilverlineApp({super.key, required this.homeViewModel});
 
-  final HomeViewModel homeViewModel;
+class FixItApp extends StatelessWidget {
+  const FixItApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: AppConstants.appName,
+      title: 'FixIt',
       debugShowCheckedModeBanner: false,
-      theme: AppTheme.light,
-      home: HomePage(viewModel: homeViewModel),
+      theme: AppTheme.light(),
+      darkTheme: AppTheme.dark(),
+      home: const RootShell(),
     );
   }
 }
+
+
+
